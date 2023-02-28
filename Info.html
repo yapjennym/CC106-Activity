@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Information</title>
+        <style>
+            body, html{
+                height: 100%;
+                margin: 0;
+                background-image: url('3.jpeg');
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .header {
+                overflow: hidden;
+                padding: 20px 10px;
+            }
+
+            .header a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px; 
+                line-height: 25px;
+                border-radius: 4px;
+                
+            }
+
+            .header a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .header a.active {
+                color: black;
+            }
+
+            .header-right {
+                margin-left: 60%;
+                margin-top: -5%;
+            }
+            a {
+                margin-right: 20%;
+            }
+            @media screen and (max-width: 500px) {}
+            img.logo{
+                height: 10%;
+                width: 6%;
+                margin-left: 10%;
+                margin-top: 3%;
+                opacity: 70%;
+            }
+            img.img{
+                height: 35%;
+                width: 18%;
+                border-radius: 50%;
+                margin-top: 10%;
+                margin-left: 10%;
+                border: 2px solid white;
+            }
+            .vl {
+                border-left: 4px solid black;
+                height: 300px;
+                position: absolute;
+                left: 52%;
+                margin-left: -15%;
+                top: 35%;
+            }
+
+            p.a{
+                margin-left: 40%;
+                font-size:25px;
+                color: white;
+                margin-top: -19%;
+                text-align: justify;
+            }
+            p.key {
+                margin-top: -27%;
+                animation-duration: 5s;
+                animation-name: slidein;
+                font-size: 50px;
+                margin-left: 50%;
+                animation-iteration-count: infinite;
+                
+            }
+
+            @keyframes slidein {
+                from {
+                margin-left: 60%;
+                width: 20%;
+                color: aqua;
+                }
+                to {
+                margin-left: 40%;
+                width: 20%;
+                color: purple;
+                }
+            }
+            #demo2 {
+            margin-top: -12%;
+            font-size: 30px;
+            margin-left: 18%;
+            color: aquamarine;
+            font-family: algerian;
+          }
+            </style>
+                    <script type="text/javascript">
+                        function myFunction() {
+                            var d = new Date();
+                            var n = d.toLocaleString([], { hour: '2-digit', minute: '2-digit' });
+                            document.getElementById("demo").innerHTML = n;
+                        }
+                        function fullDateTime() {
+                            var d = new Date();          
+                            var n = d.toLocaleString([], { hour12: true});
+                            document.getElementById("demo2").innerHTML = n;
+                        }
+                    </script>
+        </head>
+        <body>
+            <div class="header">
+                <img class="logo" src="logoo.png">
+                <div class="header-right">
+                  <a href="homepage.html">Home</a> 
+                  <a class="active" href="Info.html">About</a>
+                  <a href="contacts.html">Contact</a>
+                </div> 
+              </div>
+              <img class="img" src="2.png">
+            <div class="vl"></div>
+              <p class="a">Hello! My name is Jenny Mae Yap, and I am a third-year student <br>
+                at San Bartolome campus of Quezon City University. I'm pursuing <br>
+                a bachelor's degree in information technology. <br> <br>
+                
+                I adore dogs, particularly the way they are both sweet and needy <br>
+                at the same time. I have two dogs of my own. In my spare time, <br>
+                I enjoy playing with them, watching movies, and scrolling through <br>
+                social media platforms </p>
+
+                <p class="key"> ABOUT ME</p>
+                <body onload="fullDateTime()">
+                    <p id="demo2"></p>
+        </body>
+        </html>

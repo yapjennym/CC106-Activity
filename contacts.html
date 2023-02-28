@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>
+        </title>
+        <style>
+            body, html{
+                height: 100%;
+                margin: 0;
+                background-image: url('4.jpeg');
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .header {
+                overflow: hidden;
+                padding: 20px 10px;
+            }
+
+            .header a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px; 
+                line-height: 25px;
+                border-radius: 4px;
+                
+            }
+
+            .header a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .header a.active {
+                color: black;
+            }
+
+            .header-right {
+                margin-left: 60%;
+                margin-top: -5%;
+            }
+            a {
+                margin-right: 20%;
+            }
+            @media screen and (max-width: 500px) {}
+            img.logo{
+                height: 10%;
+                width: 6%;
+                margin-left: 10%;
+                margin-top: 3%;
+                opacity: 70%;
+            }
+            #demo2 {
+            margin-top:-4%;
+            font-size: 30px;
+            margin-left: 18%;
+            color: aquamarine;
+            font-family: algerian;
+          }
+          img.pic {
+            width: 15%;
+            height: 15%;
+            margin-left: 20%;
+            margin-top: 12%;
+          }
+          img.pics {
+            width: 15%;
+            height: 15%;
+            margin-left:-12%;
+            margin-top: -12%;
+          }
+          img.picss {
+            width: 15%;
+            height: 15%;
+            margin-left: 65%;
+            margin-top: -8%;
+          }
+          p.feel {
+            margin-top: -16%;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+          }
+            </style>
+                    <script type="text/javascript">
+                        function myFunction() {
+                            var d = new Date();
+                            var n = d.toLocaleString([], { hour: '2-digit', minute: '2-digit' });
+                            document.getElementById("demo").innerHTML = n;
+                        }
+                        function fullDateTime() {
+                            var d = new Date();          
+                            var n = d.toLocaleString([], { hour12: true});
+                            document.getElementById("demo2").innerHTML = n;
+                        }
+                    </script>
+
+    </head>
+    <body>
+        <div class="header">
+            <img class="logo" src="logoo.png">
+            <div class="header-right">
+              <a href="homepage.html">Home</a> 
+              <a href="Info.html">About</a>
+              <a class="active" href="contacts.html">Contact</a>
+            </div> 
+        </div>
+        <body onload="fullDateTime()">
+            <p id="demo2"></p>
+
+        <a href="https://www.facebook.com/">
+        <img class="pic" src="fb.png"></a>
+
+        <a href="https://www.instagram.com/">
+        <img class="pics" src="ig.png"></a>
+
+        <a href="https://www.gmail.com/">
+        <img class="picss" src  ="email.png"> </a>
+
+        <p class="feel"> If you need further information, Feel free to contact me at: </p>
+    </body>
+</html>
